@@ -8,10 +8,9 @@ namespace SchoolSoft1v1
     {
         static void Main(string[] args)
         {
-            Filehandler HandleFiles = new Filehandler();
-            TimeMananger Time = new TimeMananger();
-            HandleFiles.LoadObjectList(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), @"SchoolSoft1v1Me\Schedule\" + Time.DayOfWeek + ".json"));
-            //LessonManager ClassMananger = new LessonManager();
+
+            new ConsoleWorker().Start();
+            ConsoleWorker.ins
             //if (ClassMananger.CurrentLessonSelect() == true)
             //{
             //    Lesson templesson = Lesson.MyList[LessonManager.CurrentLesson];
